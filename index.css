@@ -6,10 +6,11 @@ body {
     font-weight: 400;
     font-style: normal;
     text-align: center;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: stretch; /* FIX: allow children to stretch */
 }
 
 h1 {
@@ -47,8 +48,8 @@ button {
 }
 
 #dashboard {
-    width: 100%;
-    max-width: min(90%, 350px);
+    width: 100%;                    /* ensure full width */
+    max-width: min(90%, 350px);     /* responsive constraint */
     margin: auto;
     border: 3px solid #B2B6C1;
     border-radius: 10%;
