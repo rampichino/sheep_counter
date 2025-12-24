@@ -60,3 +60,10 @@ button {
 #counter-title {
     text-shadow: 2px 2px 2px #B2B6C1;
 }
+
+@media (max-width: 768px) {
+    #dashboard {
+        max-width: 100%;
+        border-radius: 0;
+    }
+}
