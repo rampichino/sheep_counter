@@ -1,7 +1,5 @@
 body {
     min-height: 100vh;   
-    background-image: url("sheep2.png");
-    background-size: contain;
     font-family: "Delius Swash Caps", cursive;
     font-weight: 400;
     font-style: normal;
@@ -9,8 +7,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch; /* FIX: allow children to stretch */
+    align-items: center; /* FIX: allow children to stretch */
     box-sizing: border-box;
+    margin: 0;
+}
+
+#bg {
+    background-image: url("sheep2.png");
+    background-size: contain;
+    z-index: -1;
+    flex: 1;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+    border: solid 3px black; 
 }
 
 h1 {
@@ -63,7 +77,6 @@ button {
 
 @media (min-width: 769px) {
     body {
-        padding: 0 40px;                 /* add left/right space on big screens */
         background-clip: content-box;    /* keep background inside the padding */
         background-origin: content-box;  /* position background from content area */
     }
@@ -75,8 +88,7 @@ button {
 @media (max-width: 768px) {
     #dashboard {
         max-width: 100%;
-        border-radius: 0;
-        padding: 16px;
-        margin: 0;                   /* fully expand to device width */
+        border-radius: 5%;
+        margin: 10px;
     }
 }
