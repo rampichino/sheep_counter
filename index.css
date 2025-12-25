@@ -6,11 +6,11 @@ body {
     font-weight: 400;
     font-style: normal;
     text-align: center;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch; /* FIX: allow children to stretch */
+    box-sizing: border-box;
 }
 
 h1 {
@@ -62,6 +62,11 @@ button {
 }
 
 @media (min-width: 769px) {
+    body {
+        padding: 0 40px;                 /* add left/right space on big screens */
+        background-clip: content-box;    /* keep background inside the padding */
+        background-origin: content-box;  /* position background from content area */
+    }
     #dashboard {
         max-width: 380px;
     }
