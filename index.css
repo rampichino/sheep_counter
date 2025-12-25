@@ -53,10 +53,12 @@ button {
 
 #increment-btn {
     background: #99B8D7;
+    cursor: pointer;
 }
 
 #save-btn {
     background: #B2B6C1;
+    cursor: pointer;
 }
 
 #dashboard {
@@ -73,7 +75,7 @@ button {
     text-shadow: 2px 2px 2px #B2B6C1;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 901px) {
     body {
         background-clip: content-box;    /* keep background inside the padding */
         background-origin: content-box;  /* position background from content area */
@@ -83,10 +85,13 @@ button {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     #dashboard {
-        max-width: 100%;
+        max-width: 400px;
         border-radius: 5%;
         margin: 10px;
+    }
+    #bg {
+        width: 100%;   
     }
 }
