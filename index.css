@@ -54,6 +54,7 @@ button {
 #increment-btn {
     background: #99B8D7;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 #save-btn {
