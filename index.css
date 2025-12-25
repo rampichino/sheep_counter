@@ -7,24 +7,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* FIX: allow children to stretch */
+    align-items: center;
     box-sizing: border-box;
     margin: 0;
+    background-image: url("sheep2.png");
+    background-size: contain;
+    background-attachment: fixed;
 }
 
 #bg {
-    background-image: url("sheep2.png");
-    background-size: contain;
-    z-index: -1;
-    flex: 1;
-    width: 60%;
-    padding: 0;
-    margin: 0;
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    min-height: 100vh;
-    border: solid 3px black; 
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
