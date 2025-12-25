@@ -49,7 +49,6 @@ button {
 
 #dashboard {
     width: 100%;                    /* ensure full width */
-    max-width: 90%;
     margin: auto;
     border: 3px solid #B2B6C1;
     border-radius: 10%;
