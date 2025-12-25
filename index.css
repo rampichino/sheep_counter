@@ -61,6 +61,12 @@ button {
     text-shadow: 2px 2px 2px #B2B6C1;
 }
 
+@media (min-width: 769px) {
+    #dashboard {
+        max-width: 380px;
+    }
+}
+
 @media (max-width: 768px) {
     #dashboard {
         max-width: 100%;
